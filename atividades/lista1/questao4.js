@@ -6,5 +6,5 @@ let n = 10
 let per = n * 4
 let area = n * n
 
-console.log(parseInt(per))
-console.log(parseInt(area))
+console.log(per)
+console.log(area)

@@ -11,7 +11,4 @@ for (let i = 0; i < 4; i++) {
 let media = somaNotas / 4
 
 console.log('Notas:', notas)
-// for (let i = 0; i < 4; i++) {
-//     console.log(notas[i], end=" ")
-// }
 console.log('Média:', media)

@@ -4,10 +4,10 @@
 
 let vet1 = [8, 3, 9, 5, 6, 12]
 
-function filterPar(array) {
-    return vet1.filter((valor), valor % 2 === 0)
+function filterPares(array) {
+    return vet1.filter((valor) => valor % 2 === 0)
 }
 
-let vetFiltrado = filterPar(vet1)
+let vetPares = filterPares(vet1)
 
-console.log(vetFiltrado)
+console.log(vetPares)

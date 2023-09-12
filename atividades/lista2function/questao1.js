@@ -1,20 +1,31 @@
 // Faça um programa JavaScript que calcule e imprima o quadrado de cada elemento do array 
 // vet=[3,5,7,3,8,9,1], use as seguintes estratégias:
 
-let vet = [3, 5, 7, 3, 8, 9, 1]
-let vetFor = []
+var vet = [3, 5, 7, 3, 8, 9, 1]
+var vetFor = []
+var vetForEach = []
 
-function quadrado(valor) {
-    return valor*2
-}
+
 
 for (let i = 0; i < vet.length; i++) {
-    let x = quadrado(vet[i])
-    vetFor.push(x)
+    vetFor.push(vet[i]*vet[i])
 }
 
-console.log(6)
-// console.log(vet[1])
-console.log(quadrado(3))
-// console.log(quadrado(vet[i]))
-// console.log(vetFor)
+// Solução com FOR simples
+console.log('Solução com FOR')
+console.log(vetFor)
+console.log()
+
+// Solução com FOREACH
+vetForEach = vet.forEach((valor) => valor ** 2)
+console.log('Solução com FOREACH')
+console.log(vetForEach)
+console.log()
+
+
+// Solução com MAP
+let vetMap = vet.map((valor) => valor ** 2)
+console.log('Solução com MAP')
+console.log(vetMap)
+
+

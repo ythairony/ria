@@ -17,7 +17,7 @@ console.log(vetFor)
 console.log()
 
 // Solução com FOREACH
-vetForEach = vet.forEach((valor) => valor ** 2)
+vet.forEach((valor) => vetForEach.push(valor**2))
 console.log('Solução com FOREACH')
 console.log(vetForEach)
 console.log()

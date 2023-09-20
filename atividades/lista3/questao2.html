@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2</title>
+</head>
+<body>
+    <h1>Lista de Usuários</h1>
+    <ul id="user-list">
+        <!-- A lista de usuários será preenchida aqui -->
+    </ul>
+
+    <script>
+        // Função para fazer a requisição GET
+        function usuario() {
+            fetch('https://jsonplaceholder.typicode.com/users')
+                .then(response => response.json())
+                .then(usuarios => {
+                    const listaUsuarios = document.getElementById('user-list');
+
+                    // Itera pelos usuários e cria um elemento de lista para cada um
+                    usuarios.forEach(user => {
+                        const listaUser = document.createElement('li');
+                        listaUser.textContent = `Nome de usuários: ${user.username}`;
+                        listaUsuarios.appendChild(listaUser);
+                    });
+                })
+                .catch(error => {
+                    console.error('Erro ao recuperar os usuários:', error);
+                });
+        }
+
+        // Chama a função para buscar os usuários quando a página carregar
+        window.addEventListener('load', usuario);
+    </script>
+</body>
+</html>

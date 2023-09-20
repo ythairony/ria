@@ -6,6 +6,10 @@
     <title>Questão 1</title>
 </head>
 <body>
-    
+    <script>
+        fetch('https://jsonplaceholder.typicode.com/users/1')
+        .then(response => response.json())
+        .then(usuario => {alert("Usuário é: " + usuario.username)})
+    </script>
 </body>
 </html>

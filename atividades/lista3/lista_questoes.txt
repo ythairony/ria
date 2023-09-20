@@ -1,0 +1,21 @@
+1 - Construa uma página HTML para apresentar o usuário (user) de Id 1, presente na URL
+(https://jsonplaceholder.typicode.com/users/1). Use o método GET do protocolo HTTP para
+recuperar os dados.
+
+2 - Construa uma página HTML que liste todos os usuários presentes na URL
+(https://jsonplaceholder.typicode.com/users). Use o método GET do protocolo HTTP para
+recuperar os dados.
+
+3 - Construa uma página HTML com um formulário que quando acionado o botão Gravar, envie
+os dados para URL (https://jsonplaceholder.typicode.com/users). Ao fim do processo imprima
+na tela as informações de retorno/resposta da API. Use o método POST do protocolo HTTP
+para enviar os dados.
+a. Considera os campos name, username e email para o formulário.
+
+
+Orientações
+
+• Implemente cada item da lista em uma página HTML diferente.
+• Uso o conteúdo de JS visto até o momento na disciplina.
+• Siga os exemplos presente no tutorial (https://jsonplaceholder.typicode.com/guide/)
+para ajudar no desenvolvimento do seu código JavaScript.

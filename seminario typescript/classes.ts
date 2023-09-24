@@ -67,3 +67,37 @@ class Carro {
         return this._modelo;
     }
 }
+
+
+class CarroEletrico extends Carro{
+    //Atributos
+    _capacidadeDeCarga:number;
+
+    //Construtor
+    constructor(marca:string, modelo:string, cor:string, anoDeFabricacao:number, capacidadeDeCarga:number) {
+        super(marca, modelo, cor, anoDeFabricacao);
+        this._capacidadeDeCarga = capacidadeDeCarga;
+    }
+
+    //Métodos 
+    carregamento(carga: 'tomada' | 'wallbox'):string {
+        return `${this.veiculo} está carregando na ${carga}`
+    }
+}
+
+
+class CarroCombustao extends Carro {
+    //Atributos
+    _tanque:number;
+
+    //Construtor
+    constructor(marca:string, modelo:string, cor:string, anoDeFabricacao:number, tanque:number) {
+        super(marca, modelo, cor, anoDeFabricacao);
+        this._tanque = tanque;
+    }
+
+    //Métodos
+    abastecimento():string {
+        return `O carro está abastecendo`
+    }
+}

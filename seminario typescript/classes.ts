@@ -56,11 +56,11 @@ class Carro {
     }
 
     frear():string {
-        return `${this.veiculo} freiou`
+        return `${this.veiculo()} freiou`
     }
 
     virar(direcao: 'direita' | 'esquerda'):string {
-        return `${this.veiculo} está virando à ${direcao}`
+        return `${this.veiculo()} está virando à ${direcao}`
     }
 
     veiculo():string {
@@ -81,7 +81,7 @@ class CarroEletrico extends Carro{
 
     //Métodos 
     carregamento(carga: 'tomada' | 'wallbox'):string {
-        return `${this.veiculo} está carregando na ${carga}`
+        return `${this.veiculo()} está carregando na ${carga}`
     }
 }
 
@@ -101,3 +101,8 @@ class CarroCombustao extends Carro {
         return `O carro está abastecendo`
     }
 }
+
+let carro1 = new Carro('Honda', 'Civic', 'Cinza', 2021)
+console.log(carro1.acelerar(100));
+let carro2 = new CarroEletrico('Volvo', 'C40', 'branco', 2023, 200);
+console.log(carro2.carregamento('wallbox'));

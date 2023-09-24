@@ -1,10 +1,10 @@
-As classes permite que possamos expressar aspectos comuns da vida real em forma comum de objetos na programação
+As classes permitem que possamos expressar aspectos comuns da vida real em forma comum de objetos na programação
 
-Uma classe chamada Carro terá suas características que chamamos de atributos como: Marca, Modelo, Cor e ano de fabricação. Ela também terá seus compartamentos que o carro pode executar que chamamos de métodos como: Acelerar, frear e virar.
+Uma classe chamada Carro terá suas características que chamamos de atributos como: Marca, Modelo, Cor e ano de fabricação. Ela também terá seus comportamentos que o carro pode executar que chamamos de métodos como: Acelerar, frear e virar.
 
 A classe é apenas uma abstração de algo que tem características em comum, ela precisa ser instanciada antes de se tornar um objeto ao qual você possa atribuir valor de propriedades.
 
-Você também pode usar classes para adicionar propriedades (atributos e métodos) a mais a uma classe já existente, dessa forma uma classe pode herdar propriedades de outra classe. A classe que será herdada tem características comuns que possam ser usadas por outras classes mais específicas, por exemplo uma classe CarroEletrico tem suas características específicas de um carro elétrico como por ex.: capacidade de carga e um comportamento de carregamento, porém tem as comuns da class Carro.
+Você também pode usar classes para adicionar propriedades (atributos e métodos) a mais a uma classe já existente, dessa forma uma classe pode herdar propriedades de outra classe. A classe que será herdada tem características comuns que possam ser usadas por outras classes mais específicas, por exemplo uma classe CarroEletrico tem suas características específicas de um carro elétrico como por ex.: capacidade de carga e um comportamento de carregamento, porém tem as comuns da classe Carro.
 
 Classe Carro {
     marca
@@ -36,8 +36,6 @@ Classe CarroEletrico estende Carro {
     }
 }
 
-Uma classe pode ter uma construtor, ele tem uma função especial de iniciar uma instância de um objeto com valores passados diretamente no instanciamento do objeto.
+Uma classe pode ter um construtor, ele tem uma função especial de iniciar uma instância de um objeto com valores passados diretamente na instância do objeto.
 
-Os atributos de uma instancia não são acessados diretamente pelo publico externo, esse é o papel dos acessadores que tem a função de obter (get) ou definir (set) um valor a uma propriedade. Devem-se usar esses métodos de acesso quando quiser regastar ou inserir valores no objeto da classe.
-
-
+Os atributos de uma instanciam não são acessados diretamente pelo público externo, esse é o papel dos acossadores que tem a função de obter (get) ou definir (set) um valor a uma propriedade. Devem-se usar esses métodos de acesso quando quiser resgatar ou inserir valores no objeto da classe.

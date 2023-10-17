@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'exemplo1';
+  title = 'angular';
+
+  entrada : string = ''
+
+  isDestaque : boolean = false
+
+  onClick() {
+    this.isDestaque = !this.isDestaque
+  }
 }

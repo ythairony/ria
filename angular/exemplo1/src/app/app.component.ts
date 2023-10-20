@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular';
 
+  lista = [
+    'ABC',
+    'AMERICA',
+    'ALECRIM'
+  ]
+
   entrada : string = ''
 
   isDestaque : boolean = false
@@ -16,3 +22,4 @@ export class AppComponent {
     this.isDestaque = !this.isDestaque
   }
 }
+

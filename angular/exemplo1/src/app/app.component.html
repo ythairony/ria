@@ -11,3 +11,11 @@
 <p>{{ entrada }}</p>
 
 <button [class.botao-destaque] = "isDestaque" (click)="onClick()">Aperta aqui</button>
+
+<p>Botão foi pintado?</p>
+<div *ngIf="isDestaque">SIM!</div>
+
+<p [ngClass]="{'time':isDestaque, 'cor-time':!isDestaque }">Lista de times ruins do RN</p> <!--  uso do ngFor -->
+<ul>
+    <li [ngStyle]="{'color' : isDestaque ? 'red' : 'black'}"   *ngFor="let time of lista">{{ time }}</li>
+</ul>

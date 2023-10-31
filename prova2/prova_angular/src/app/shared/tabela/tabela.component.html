@@ -1,0 +1,17 @@
+<input type="text" [(ngModel)]="novaLinguagem">
+<button (click)="adicionarLinguagem(novaLinguagem)">Adicionar</button>
+
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Linguagem</th>
+        <th>Ação</th>
+    </tr>
+    <tr *ngFor="let linguagem of linguagens; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ linguagem.linguagem }}</td>
+        <td><button (click)="excluirLinguagem(i)">Excluir</button></td>
+    </tr>
+</table>
+  

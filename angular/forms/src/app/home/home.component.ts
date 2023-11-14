@@ -3,7 +3,6 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   template: `
   <form [formGroup]="meuForm" (ngSubmit)="enviar()">
@@ -24,12 +23,13 @@ export class HomeComponent {
     this.meuForm = this.formBuilder.group({
       nome: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]]
-    })
+    });
   }
 
   enviar() {
     if (this.meuForm.valid) {
-
+      return 1;
     }
+    return 0;
   }
 }

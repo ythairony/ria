@@ -1,0 +1,28 @@
+{
+    "tarefas": [
+        {
+            "id": 1,
+            "descricao": "Primeira tarefa",
+            "data": "25/11/2023", 
+            "status": "Iniciada"
+        },
+        {
+            "id": 2,
+            "descricao": "Teste de título",
+            "data": "25/11/2023", 
+            "status": "Não Iniciada"
+        },
+        {
+            "id": 3,
+            "descricao": "Testando API Json-server",
+            "data": "27/11/2023", 
+            "status": "Concluído"
+        },
+        {
+            "id": 38,
+            "descricao": "Debora me ajudou",
+            "data": "27/11/2023", 
+            "status": "Concluído"
+        }
+    ]
+}

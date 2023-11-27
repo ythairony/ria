@@ -9,6 +9,7 @@ import { GradeComponent } from './views/grade/grade.component';
 import { CalendarioComponent } from './views/calendario/calendario.component';
 import { PesquisarComponent } from './shared/pesquisar/pesquisar.component';
 import { TabelaComponent } from './shared/tabela/tabela.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TabelaComponent } from './shared/tabela/tabela.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

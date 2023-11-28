@@ -15,4 +15,10 @@ export class TarefaService {
   getTarefas(): Observable<Tarefa[]> {
     return this.http.get<Tarefa[]>(this.url + 'tarefas');
   }
+
+
+  // Problema na criação da tarefa
+  createTarefa(tarefa: Tarefa): Observable<Tarefa> {
+    return this.http.post<Tarefa>(this.url + 'tarefas/', tarefa);
+  }
 }

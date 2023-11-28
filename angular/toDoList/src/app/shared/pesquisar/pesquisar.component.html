@@ -1,1 +1,4 @@
-<div id="pesquisa"><input type="search" name="addlist" id="addlist"><input type="submit" value="Adicionar"></div>
+<!-- #task="ngForm"  -->
+<form #task="ngForm" id="pesquisa"> 
+    <input type="text" name="addlist" id="addlist" placeholder="Adicione uma tarefa" ngModel><button (click)="onSubmit(task)">Adicionar</button>
+</form>

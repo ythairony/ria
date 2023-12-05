@@ -12,7 +12,13 @@ export class ListaComponent implements OnInit{
 
   tarefas: Tarefa[] = [];
 
+
+
   constructor(private service: TarefaService) { }
+
+  adicionarTarefa(evento: Tarefa):void {
+    this.tarefas.push(evento);
+  }
 
   ngOnInit() {
     this.service.getTarefas().subscribe(data => this.tarefas = data);

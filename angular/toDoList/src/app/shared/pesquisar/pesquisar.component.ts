@@ -9,17 +9,26 @@ import { TarefaService } from 'src/app/service/tarefa.service';
   styleUrls: ['./pesquisar.component.css']
 })
 export class PesquisarComponent {
+  dataDeHoje: Date;
   tarefa: Tarefa = {id: 0, descricao: '', data: '', status: 'Não iniciado'};
-  // data: Date;
 
-  constructor(private service: TarefaService) {}
+  constructor(private service: TarefaService) {
 
+    this.dataDeHoje = new Date();
+    
+  }
+  
+  private formatDate(date: Date): string {
+    const year = date.getFullYear();
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const day = date.getDate().toString().padStart(2, '0');
+    return `${day}/${month}/${year}`;
+  }
+  
   onSubmit(task: NgForm) {
-    this.tarefa.descricao = task.value.addlist;
-    // data = new Date();
-    this.tarefa.data = 'Data de hoje';
-    this.service.createTarefa(this.tarefa);
-
-    // this.service.createTarefa(this.tarefa).subscribe(data => this.tarefas.push(data));
+    this.tarefa.descricao = task.value.tarefa;
+    this.tarefa.data = this.formatDate(this.dataDeHoje);
+    this.service.createTarefa(this.tarefa).subscribe(data => console.log(data));
+    console.log('Esse submit foi acionado')
   }
 }

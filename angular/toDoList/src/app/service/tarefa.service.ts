@@ -13,12 +13,14 @@ export class TarefaService {
   constructor(private http: HttpClient) { }
 
   getTarefas(): Observable<Tarefa[]> {
-    return this.http.get<Tarefa[]>(this.url + 'tarefas');
+    return this.http.get<Tarefa[]>(this.url + 'tarefas/');
   }
 
 
   // Problema na criação da tarefa
   createTarefa(tarefa: Tarefa): Observable<Tarefa> {
+    console.log('passou pelo createTarefa')
     return this.http.post<Tarefa>(this.url + 'tarefas/', tarefa);
+
   }
 }

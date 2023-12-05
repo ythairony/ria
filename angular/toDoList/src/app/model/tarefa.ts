@@ -1,6 +1,8 @@
+
 export interface Tarefa {
     id?: number;
     descricao: string;
-    data: string;
+    data: any;
+    // data: string
     status: string;
 }

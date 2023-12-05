@@ -8,7 +8,6 @@ import { ListaComponent } from './views/lista/lista.component';
 import { GradeComponent } from './views/grade/grade.component';
 import { CalendarioComponent } from './views/calendario/calendario.component';
 import { PesquisarComponent } from './shared/pesquisar/pesquisar.component';
-import { TabelaComponent } from './shared/tabela/tabela.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
@@ -20,7 +19,6 @@ import { FormsModule } from '@angular/forms';
     GradeComponent,
     CalendarioComponent,
     PesquisarComponent,
-    TabelaComponent
   ],
   imports: [
     BrowserModule,

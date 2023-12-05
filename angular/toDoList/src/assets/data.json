@@ -1,28 +1,34 @@
 {
-    "tarefas": [
-        {
-            "id": 1,
-            "descricao": "Primeira tarefa",
-            "data": "25/11/2023", 
-            "status": "Iniciada"
-        },
-        {
-            "id": 2,
-            "descricao": "Teste de título",
-            "data": "25/11/2023", 
-            "status": "Não Iniciada"
-        },
-        {
-            "id": 3,
-            "descricao": "Testando API Json-server",
-            "data": "27/11/2023", 
-            "status": "Concluído"
-        },
-        {
-            "id": 38,
-            "descricao": "Debora me ajudou",
-            "data": "27/11/2023", 
-            "status": "Concluído"
-        }
-    ]
+  "tarefas": [
+    {
+      "id": 1,
+      "descricao": "Primeira tarefa",
+      "data": "30/11/2023",
+      "status": "Iniciada"
+    },
+    {
+      "id": 2,
+      "descricao": "Teste de título",
+      "data": "01/12/2023",
+      "status": "Não Iniciada"
+    },
+    {
+      "id": 3,
+      "descricao": "Testando API Json-server",
+      "data": "01/02/2023",
+      "status": "Concluído"
+    },
+    {
+      "id": 38,
+      "descricao": "Debora me ajudou",
+      "data": "02/02/2023",
+      "status": "Concluído"
+    },
+    {
+      "id": 39,
+      "descricao": "Débora é pikas",
+      "data": "04/12/2023",
+      "status": "Não iniciado"
+    }
+  ]
 }

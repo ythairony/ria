@@ -1,4 +1,5 @@
-<!-- #task="ngForm"  -->
-<form #task="ngForm" id="pesquisa"> 
-    <input type="text" name="addlist" id="addlist" placeholder="Adicione uma tarefa" ngModel><button (click)="onSubmit(task)">Adicionar</button>
-</form>
+<section>
+    <form class="d-flex justify-content-center" #task="ngForm" id="pesquisa"> 
+        <input type="text" name="tarefa" id="addlist" placeholder="Adicione uma tarefa" ngModel required> <button (click)="onSubmit(task)">Adicionar</button>
+    </form>
+</section>

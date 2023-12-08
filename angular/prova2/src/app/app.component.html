@@ -1,0 +1,28 @@
+<section class="container">
+  <form #estudante="ngForm" (ngSubmit)="adicionarEstudante(estudante)">
+    <div class="mb-3 mt-5">
+      <label for="matricula" class="form-label">Matrícula</label>
+      <input type="text" class="form-control" id="matricula" name="matricula" placeholder="Matrícula" ngModel required>
+      <!-- <div *ngIf="estudante.controls.matricula.invalid && (estudante.controls.matricula.dirty || estudante.controls.matricula.touched)">
+        <div *ngIf="estudante.controls.matricula.errors.required">Matrícula é obrigatória.</div>
+      </div> -->
+    </div>
+    <div class="mb-3">
+      <label for="username" class="form-label">Usuário</label>
+      <input type="text" class="form-control" id="username" name="usuario" placeholder="Usuário" ngModel required>
+      <!-- <div *ngIf="estudante.controls.usuario.invalid && (estudante.controls.usuario.dirty || estudante.controls.usuario.touched)">
+        <div *ngIf="estudante.controls.usuario.errors.required">Usuário é obrigatório.</div>
+      </div> -->
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Endereço de Email</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" ngModel required email>
+      <!-- <div *ngIf="estudante.controls.email.invalid && (estudante.controls.email.dirty || estudante.controls.email.touched)">
+        <div *ngIf="estudante.controls.email.errors.required">Email é obrigatório.</div>
+        <div *ngIf="estudante.controls.email.errors.email">Email deve estar em um formato válido.</div>
+      </div> -->
+    </div>
+    <button type="submit" class="btn btn-primary">Adicionar Estudante</button>
+  </form>
+  
+</section>

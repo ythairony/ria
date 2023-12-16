@@ -1,1 +1,23 @@
-<p>grade works!</p>
+<section class="container">
+    <div><app-pesquisar (tarefaCriada)="adicionarTarefa($event)"></app-pesquisar></div>
+
+    <article>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" *ngFor="let tarefa of tarefas">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">{{tarefa.id}} - {{ tarefa.descricao }}</h5>
+                  <p class="card-text">data: {{ tarefa.data }}</p>
+                  <p class="card-text">status: {{ tarefa.status }} </p>
+                  <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic outlined example">
+                    <button type="button" class="btn btn-outline-primary" (click)="changeStatus(tarefa, 'i')">Iniciar</button>
+                    <button type="button" class="btn btn-outline-primary" (click)="changeStatus(tarefa, 'c')">Concluir</button>
+                    <button type="button" class="btn btn-outline-primary" (click)="excluirTarefa(tarefa)">Excluir</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+    </article>
+</section>

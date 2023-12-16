@@ -31,7 +31,11 @@ export class PesquisarComponent {
     this.tarefa.descricao = task.value.tarefa;
     this.tarefa.data = this.formatDate(this.dataDeHoje);
     this.service.createTarefa(this.tarefa).subscribe(data => console.log(data));
-    console.log('Esse submit foi acionado')
-    this.tarefaCriada.emit(this.tarefa)
+    console.log('Esse submit foi acionado');
+    this.tarefaCriada.emit(this.tarefa);
+
+    task.resetForm();
   }
+
+
 }

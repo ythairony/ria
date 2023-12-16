@@ -17,10 +17,20 @@ export class TarefaService {
   }
 
 
-  // Problema na criação da tarefa
   createTarefa(tarefa: Tarefa): Observable<Tarefa> {
     console.log('passou pelo createTarefa')
     return this.http.post<Tarefa>(this.url + 'tarefas/', tarefa);
 
+  }
+
+  updateStatusTarefa(tarefa: Tarefa): Observable<any> {
+    const url = `${this.url}tarefas/${tarefa.id}`
+
+    return this.http.put(url, tarefa);
+  }
+
+  deteleTarefa(tarefa: Tarefa): Observable<any> {
+    const url = `${this.url}tarefas/${tarefa.id}`;
+    return this.http.delete(url);
   }
 }

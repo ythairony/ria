@@ -26,12 +26,9 @@
               Ação
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item"
-                  href="#">Suspender</a></li>
-              <li><a class="dropdown-item"
-                  href="#">Concluir</a></li>
-              <li><a class="dropdown-item"
-                  href="#">Excluir</a></li>
+              <li><button class="dropdown-item" (click)="changeStatus(tarefa, 'i')">Iniciar</button></li>
+              <li><button class="dropdown-item" (click)="changeStatus(tarefa, 'c')">Concluir</button></li>
+              <li><button class="dropdown-item" (click)="excluirTarefa(tarefa)">Excluir</button></li>
             </ul>
           </div>
         </td>

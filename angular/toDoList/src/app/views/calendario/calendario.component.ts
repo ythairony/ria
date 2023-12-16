@@ -11,9 +11,13 @@ export class CalendarioComponent implements OnInit{
   
   dataAtual: Date = new Date();
   diasCalendario: Date[] = [];
+  tarefas: Tarefa[] = [];
+
+  constructor(private service: TarefaService) { }
 
   ngOnInit() {
     this.construirCalendario();
+    this.service.getTarefas().subscribe(data => this.tarefas = data)
   }
 
   construirCalendario() {
@@ -51,9 +55,7 @@ export class CalendarioComponent implements OnInit{
       this.construirCalendario();
   }
 
-  tarefas: Tarefa[] = [];
 
-  // constructor(private service: TarefaService) { }
 
   adicionarTarefa(evento: Tarefa):void {
     this.tarefas.push(evento);

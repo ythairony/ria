@@ -28,11 +28,15 @@
              seguinte forma:
                [class.minhaclasse]="condição"
         -->
-        <div *ngFor="let dia of diasCalendario; let i = index"
+        <div *ngFor="let dia of diasCalendario; let i = index;"
             class="calendario-dia"
             [class.calendario-quebrar-linha]="i % 7 === 0"
             [class.calendario-dia-nao-faz-parte-mes-atual]="dataAtual.getMonth() !== dia.getMonth()">
             {{dia | date : 'dd'}}
+            <div *ngFor="let tarefa of tarefas | filterByDia: dia">
+                <p class="task">{{ tarefa.descricao }}</p>
+                <p class="task">status: {{ tarefa.status }}</p>
+            </div>
         </div>
     </div>
 </section>

@@ -25,22 +25,16 @@
       "status": "Concluído"
     },
     {
-      "id": 40,
-      "descricao": "Conseguir arrumar o botão de ação",
+      "id": 41,
+      "descricao": "Testando calendário",
       "data": "16/12/2023",
       "status": "Não iniciado"
     },
     {
       "id": 42,
-      "descricao": "Voltando a fazer o ToDoList",
+      "descricao": "A gloria do rest",
       "data": "16/12/2023",
-      "status": "Iniciada"
-    },
-    {
-      "id": 43,
-      "descricao": "Criando a rota grade",
-      "data": "16/12/2023",
-      "status": "Iniciada"
+      "status": "Não iniciado"
     }
   ]
 }

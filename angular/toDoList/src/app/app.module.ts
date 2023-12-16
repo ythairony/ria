@@ -11,6 +11,7 @@ import { PesquisarComponent } from './shared/pesquisar/pesquisar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { FilterByDiaPipe } from './views/calendario/filter-by-dia.pipe';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { CommonModule } from '@angular/common';
     GradeComponent,
     CalendarioComponent,
     PesquisarComponent,
+    FilterByDiaPipe, 
   ],
   imports: [
     BrowserModule,

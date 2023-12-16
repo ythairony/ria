@@ -7,7 +7,7 @@ import { TarefaService } from 'src/app/service/tarefa.service';
   templateUrl: './grade.component.html',
   styleUrls: ['./grade.component.css']
 })
-export class GradeComponent {
+export class GradeComponent implements OnInit{
   
   tarefas: Tarefa[] = [];
 

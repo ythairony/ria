@@ -11,8 +11,8 @@
                   <p class="card-text">status: {{ tarefa.status }} </p>
                   <div class="btn-group d-flex justify-content-between" role="group" aria-label="Basic outlined example">
                     <button type="button" class="btn btn-outline-primary" (click)="changeStatus(tarefa, 'i')">Iniciar</button>
-                    <button type="button" class="btn btn-outline-primary" (click)="changeStatus(tarefa, 'c')">Concluir</button>
-                    <button type="button" class="btn btn-outline-primary" (click)="excluirTarefa(tarefa)">Excluir</button>
+                    <button type="button" class="btn btn-outline-success" (click)="changeStatus(tarefa, 'c')">Concluir</button>
+                    <button type="button" class="btn btn-outline-danger" (click)="excluirTarefa(tarefa)">Excluir</button>
                   </div>
 
                 </div>

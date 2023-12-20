@@ -36,6 +36,9 @@
             <div *ngFor="let tarefa of tarefas | filterByDia: dia">
                 <p class="task">{{ tarefa.descricao }}</p>
                 <p class="task">status: {{ tarefa.status }}</p>
+                <a class="botoes" (click)="changeStatus(tarefa, 'i')">iniciar</a>
+                <a class="botoes concluir" (click)="changeStatus(tarefa, 'c')">concluir</a>
+                <a class="botoes excluir" (click)="excluirTarefa(tarefa)">excluir</a>
             </div>
         </div>
     </div>

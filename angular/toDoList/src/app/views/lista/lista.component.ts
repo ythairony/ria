@@ -12,9 +12,9 @@ export class ListaComponent implements OnInit{
   tarefas: Tarefa[] = [];
 
 
-
+  
   constructor(private service: TarefaService) { }
-
+  
   adicionarTarefa(evento: Tarefa):void {
     this.tarefas.push(evento);
   }
@@ -54,4 +54,16 @@ export class ListaComponent implements OnInit{
       }
     )
   }
+
+  getStatusColor(status: string): string {
+    switch (status) {
+      case 'Iniciada':
+        return 'blue';
+      case 'Concluído':
+        return 'green';
+      default:
+        return 'black'; // Cor padrão se o status não estiver mapeado
+    }
+  }
+  
 }

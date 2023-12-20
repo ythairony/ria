@@ -65,35 +65,35 @@ export class CalendarioComponent implements OnInit{
   //   this.service.getTarefas().subscribe(data => this.tarefas = data);
   // }
 
-  // changeStatus(tarefa: Tarefa, status: 'i' | 'c') {
-  //   // Mudança de status
-  //   if (status === 'i') {
-  //     tarefa.status = "Iniciada"
-  //   } else if (status === 'c') {
-  //     tarefa.status = "Concluído"
-  //   }
+  changeStatus(tarefa: Tarefa, status: 'i' | 'c') {
+    // Mudança de status
+    if (status === 'i') {
+      tarefa.status = "Iniciada"
+    } else if (status === 'c') {
+      tarefa.status = "Concluído"
+    }
 
-  //   // Atualizar status no json
-  //   this.service.updateStatusTarefa(tarefa).subscribe(
-  //     (Response) => {
-  //       console.log("status atualizado");
-  //     },
-  //     (error) => {
-  //       console.log("ERRO ao atualizar o status");
-  //     }
-  //   )
-  // }
+    // Atualizar status no json
+    this.service.updateStatusTarefa(tarefa).subscribe(
+      (Response) => {
+        console.log("status atualizado");
+      },
+      (error) => {
+        console.log("ERRO ao atualizar o status");
+      }
+    )
+  }
 
-  // excluirTarefa(tarefa: Tarefa) {
-  //   this.service.deteleTarefa(tarefa).subscribe(
-  //     (response) => {
-  //       console.log("Tarefa deletada");
-  //       // tirando ela da tabela sem precisar fazer outra requisição
-  //       this.tarefas = this.tarefas.filter(t => t.id !== tarefa.id);
-  //     },
-  //     (error) => {
-  //       console.log("ERRO ao deletar uma tarefa");
-  //     }
-  //   )
-  // }
+  excluirTarefa(tarefa: Tarefa) {
+    this.service.deteleTarefa(tarefa).subscribe(
+      (response) => {
+        console.log("Tarefa deletada");
+        // tirando ela da tabela sem precisar fazer outra requisição
+        this.tarefas = this.tarefas.filter(t => t.id !== tarefa.id);
+      },
+      (error) => {
+        console.log("ERRO ao deletar uma tarefa");
+      }
+    )
+  }
 }

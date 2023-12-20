@@ -16,7 +16,7 @@
         <th scope="row">{{ tarefa.id }}</th>
         <td>{{ tarefa.descricao }}</td>
         <td>{{ tarefa.data }}</td>
-        <td>{{ tarefa.status }}</td>
+        <td [ngStyle]="{'color': getStatusColor(tarefa.status)}">{{ tarefa.status }}</td>
         <td>
           <div class="btn-group">
             <button class="btn btn-secondary btn-sm dropdown-toggle"
@@ -26,9 +26,9 @@
               Ação
             </button>
             <ul class="dropdown-menu">
-              <li><button class="dropdown-item" (click)="changeStatus(tarefa, 'i')">Iniciar</button></li>
-              <li><button class="dropdown-item" (click)="changeStatus(tarefa, 'c')">Concluir</button></li>
-              <li><button class="dropdown-item" (click)="excluirTarefa(tarefa)">Excluir</button></li>
+              <li><button class="dropdown-item" style="color: blue" (click)="changeStatus(tarefa, 'i')">Iniciar</button></li>
+              <li><button class="dropdown-item" style="color: green" (click)="changeStatus(tarefa, 'c')">Concluir</button></li>
+              <li><button class="dropdown-item" style="color: red" (click)="excluirTarefa(tarefa)">Excluir</button></li>
             </ul>
           </div>
         </td>

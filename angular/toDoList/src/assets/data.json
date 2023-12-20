@@ -10,18 +10,12 @@
       "id": 3,
       "descricao": "Testando API Json-server",
       "data": "01/02/2023",
-      "status": "Concluído"
+      "status": "Iniciada"
     },
     {
       "id": 38,
       "descricao": "Debora me ajudou",
       "data": "02/02/2023",
-      "status": "Concluído"
-    },
-    {
-      "id": 39,
-      "descricao": "Débora é pikas",
-      "data": "04/12/2023",
       "status": "Concluído"
     },
     {
@@ -35,6 +29,12 @@
       "descricao": "A gloria do rest",
       "data": "16/12/2023",
       "status": "Não iniciado"
+    },
+    {
+      "id": 43,
+      "descricao": "Finalizando atividade ",
+      "data": "19/12/2023",
+      "status": "Iniciada"
     }
   ]
 }

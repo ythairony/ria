@@ -14,3 +14,24 @@
 .task {
     font-size: 0.5em;
 }
+
+.botoes {
+    font-size: 0.5em;
+    padding-left: 2px;
+    display: block;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.concluir {
+    color: green;
+}
+
+.excluir {
+    color: red;
+}
+
